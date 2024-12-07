@@ -8,7 +8,7 @@ import { assets } from '../../assets/assets'
 
 const Orders = ( {}) => {
 
-  const url = "http://localhost:4000";
+  const url = "https://food-delivery-app-backend-4k2b.onrender.com";
 
   const [orders, setOrders] = useState([]);
   const fetchAllOrders = async() => {
