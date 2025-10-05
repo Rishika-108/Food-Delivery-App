@@ -1,105 +1,163 @@
-# Food Delivery App 🍔🍕
+# 🍔 Food Delivery App 🍕
 
-A **Food Delivery App** built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js). This web application allows users to order food from their favorite restaurants, track their orders, and manage their cart. The app provides a seamless and user-friendly experience with real-time updates on food delivery statuses.
+A **Food Delivery Web Application** built using the **MERN stack** — **MongoDB**, **Express.js**, **React.js**, and **Node.js**.  
+This app allows users to browse restaurants, add food items to their cart, place orders, track deliveries, and securely process payments.  
+It offers a seamless, responsive, and real-time experience for both customers and admins.
+
+---
 
 ## 🌟 Features  
 
-- **User Authentication:**  
-  Users can sign up, log in, and manage their profiles.
+- **👤 User Authentication:**  
+  Users can sign up, log in, and manage their profiles using secure JWT authentication.
 
-- **Order Management:**  
-  Add items to the cart, place orders, and track delivery status.
+- **🛒 Order Management:**  
+  Add items to the cart, place orders, and track delivery status in real time.
 
-- **Admin Panel:**  
-  Admins can add or remove restaurants and manage orders.
+- **💳 Dummy Payment Integration:**  
+  Integrated a mock payment system to simulate the checkout process — great for testing without real transactions.
 
-- **Responsive Design:**  
-  The app is fully responsive, offering a smooth experience on mobile, tablet, and desktop devices.
+- **🧑‍💼 Admin Panel:**  
+  Admins can manage restaurants, menus, and orders directly from the dashboard.
+
+- **📱 Responsive Design:**  
+  Optimized for mobile, tablet, and desktop devices for a consistent user experience.
+
+---
 
 ## 🛠️ Tech Stack  
 
-- **Frontend:** React.js, HTML, CSS for building an interactive UI and handling dynamic user interactions.
-- **Backend:** Node.js and Express.js for creating a RESTful API to handle requests and manage data.
-- **Database:** MongoDB for storing user data, orders, and restaurant information.
-- **Authentication:** JWT (JSON Web Tokens) for secure login and user authentication.
-  
+| Layer        | Technologies Used |
+|---------------|-------------------|
+| **Frontend**  | React.js, HTML5, CSS3 |
+| **Backend**   | Node.js, Express.js |
+| **Database**  | MongoDB |
+| **Authentication** | JWT (JSON Web Token) |
+| **Payment (Stripe)** | Simulated payment flow for testing |
+
+---
+
 ## 🚀 Getting Started  
 
-### Prerequisites  
+### ✅ Prerequisites  
 
-Ensure the following are installed:
+Make sure you have the following installed:
 - [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.com/)
 - [npm](https://www.npmjs.com/)
 
-### Installation  
+---
 
-1. Clone the repository:  
-   ```bash  
-   git clone https://github.com/Rishika-108/Food-Delivery-App.git  
+### ⚙️ Installation  
+
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/Rishika-108/Food-Delivery-App.git
+````
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd Food-Delivery-App
    ```
 
-2. Navigate to the project directory:  
-   ```bash  
-   cd Food-Delivery-App  
+3. **Install frontend dependencies:**
+
+   ```bash
+   cd frontend
+   npm install
    ```
 
-3. Install frontend dependencies:  
-   ```bash  
-   cd frontend  
-   npm install  
+4. **Install backend dependencies:**
+
+   ```bash
+   cd ../backend
+   npm install
    ```
 
-4. Install backend dependencies:  
-   ```bash  
-   cd backend  
-   npm install  
+---
+
+### ▶️ Running the App
+
+1. **Start the backend server:**
+
+   ```bash
+   cd backend
+   npm start
    ```
 
-### Running the App  
+2. **Start the frontend server:**
 
-1. Start the backend server:  
-   ```bash  
-   cd backend  
-   npm start  
+   ```bash
+   cd ../frontend
+   npm start
    ```
 
-2. Start the frontend server:  
-   ```bash  
-   cd frontend  
-   npm start  
+3. **Open your browser** and visit 👉 `http://localhost:3000`
+
+---
+
+## 📂 Project Structure
+
+```plaintext
+Food-Delivery-App/
+├── backend/
+│   ├── controllers/   # API controllers for handling requests
+│   ├── models/        # MongoDB models (User, Order, Restaurant)
+│   ├── routes/        # API routes
+│   └── server.js      # Backend entry point
+│
+├── frontend/
+│   ├── components/    # Reusable UI components
+│   ├── pages/         # Main views (Home, Cart, Checkout, etc.)
+│   └── App.js         # Root React component
+│
+├── .env               # Environment variables (API keys, DB URI)
+├── .gitignore         # Ignored files
+├── package.json       # Project dependencies
+└── README.md          # Documentation
+```
+
+---
+
+## 🧩 Environment Variables
+
+Create a `.env` file in the **backend** directory with the following:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! 💬
+To contribute:
+
+1. **Fork** the repository
+2. **Create a new branch:**
+
+   ```bash
+   git checkout -b feature-name
    ```
+3. **Commit your changes:**
 
-3. Open the app in your browser at `http://localhost:3000`.
+   ```bash
+   git commit -m "Add feature-name"
+   ```
+4. **Push to your branch:**
 
-## 📂 Project Structure  
+   ```bash
+   git push origin feature-name
+   ```
+5. **Open a Pull Request**
 
-```plaintext  
-Food-Delivery-App/  
-├── backend/  
-│   ├── controllers/   # API controllers for handling requests  
-│   ├── models/        # MongoDB models for users, orders, etc.  
-│   ├── routes/        # Routes for API requests  
-│   └── server.js      # Backend server entry point  
-├── frontend/  
-│   ├── components/    # Reusable components for the UI  
-│   ├── pages/         # Pages for each view (Home, Cart, etc.)  
-│   └── App.js         # Main React component  
-├── .env               # Environment variables for API keys and configurations  
-├── .gitignore         # Files to ignore in version control  
-├── package.json       # Project dependencies  
-└── README.md          # Documentation  
-```  
 
-## 🤝 Contributing  
+## ✨ Author
 
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-name`.
-3. Commit your changes: `git commit -m 'Add feature-name'`.
-4. Push to the branch: `git push origin feature-name`.
-5. Submit a pull request.
+**Rishika-108**
+💼 [GitHub](https://github.com/Rishika-108)
 
-## 📜 License  
-
-This project is licensed under the [MIT License](LICENSE).
+That can make your README even more practical for developers or recruiters trying out your app.
+```
