@@ -6,26 +6,26 @@ It offers a seamless, responsive, and real-time experience for both customers an
 
 ---
 
-## 🌟 Features  
+##  Features  
 
-- **👤 User Authentication:**  
+- ** User Authentication:**  
   Users can sign up, log in, and manage their profiles using secure JWT authentication.
 
-- **🛒 Order Management:**  
+- ** Order Management:**  
   Add items to the cart, place orders, and track delivery status in real time.
 
-- **💳 Dummy Payment Integration:**  
+- ** Dummy Payment Integration:**  
   Integrated a mock payment system to simulate the checkout process — great for testing without real transactions.
 
-- **🧑‍💼 Admin Panel:**  
+- ** Admin Panel:**  
   Admins can manage restaurants, menus, and orders directly from the dashboard.
 
-- **📱 Responsive Design:**  
+- ** Responsive Design:**  
   Optimized for mobile, tablet, and desktop devices for a consistent user experience.
 
 ---
 
-## 🛠️ Tech Stack  
+##  Tech Stack  
 
 | Layer        | Technologies Used |
 |---------------|-------------------|
@@ -37,9 +37,9 @@ It offers a seamless, responsive, and real-time experience for both customers an
 
 ---
 
-## 🚀 Getting Started  
+##  Getting Started  
 
-### ✅ Prerequisites  
+### Prerequisites  
 
 Make sure you have the following installed:
 - [Node.js](https://nodejs.org/)
@@ -77,7 +77,7 @@ Make sure you have the following installed:
 
 ---
 
-### ▶️ Running the App
+###  Running the App
 
 1. **Start the backend server:**
 
@@ -97,7 +97,7 @@ Make sure you have the following installed:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```plaintext
 Food-Delivery-App/
@@ -120,7 +120,7 @@ Food-Delivery-App/
 
 ---
 
-## 🧩 Environment Variables
+## Environment Variables
 
 Create a `.env` file in the **backend** directory with the following:
 
@@ -130,7 +130,7 @@ JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! 💬
 To contribute:
@@ -154,10 +154,8 @@ To contribute:
 5. **Open a Pull Request**
 
 
-## ✨ Author
+## Author
 
 **Rishika-108**
 💼 [GitHub](https://github.com/Rishika-108)
 
-That can make your README even more practical for developers or recruiters trying out your app.
-```
